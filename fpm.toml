@@ -1,0 +1,18 @@
+name        = "quadpack"
+description = "Quadpack is a Fortran 77 library for numerical integration of one-dimensional functions."
+homepage    = "http://www.netlib.org/quadpack/"
+version     = "1.0.0"
+license     = "Public Domain"
+author      = ["Robert Piessens", "Elise deDoncker-Kapenga", "Christoph W. Überhuber", "David Kahaner"]
+maintainer  = "@fortran-lang"
+copyright   = "Copyright 1981-1987 K.U.Leuven, Belgium; Inst. Fuer Math.- Techn.U.Wien, Austria; Nation. Bur. of Standards - Washington DC, USA"
+categories  = ["numerical integration"]
+keywords    = ["netlib", "gauss-kronrod"]
+
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+
+[install]
+library = false
