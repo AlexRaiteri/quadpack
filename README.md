@@ -16,3 +16,10 @@ To use quadpack within your fpm project, add the following to `fpm.toml` file:
 [dependencies]
 quadpack = {git = "https://github.com/brocolis/quadpack" }
 ```
+
+## Running the examples
+```sh
+fpm test
+# gfortran-10 requires an special flag `-fallow-argument-mismatch`
+fpm test --flag "-fallow-argument-mismatch"
+```
