@@ -5,7 +5,7 @@ implicit none
 private
 public :: qags, dqags, qagi, dqagi, qawo, dqawo, qawc, dqawc, qaws, dqaws, qng, dqng, qag, dqag, qawf, dqawf
 
-interface
+abstract interface
 
 function integrand_sp(x) result(r)
     import sp
@@ -18,6 +18,10 @@ function integrand_dp(x) result(r)
     real(dp), intent(in) :: x
     real(dp) :: r
 end function
+
+end interface
+
+interface
 
 subroutine qawf(f, a, omega, integr, epsabs, result, abserr, neval, ier, limlst, lst, leniw, maxp1, lenw, iwork, work)
     import sp
